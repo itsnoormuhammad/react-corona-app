@@ -37,7 +37,7 @@ jobs:
         cmd: install
       
     - name: create build
-      run : yarn build
+      run: NODE_OPTIONS=--openssl-legacy-provider yarn build
       
     - name : install surge
       run : npm i -g surge
